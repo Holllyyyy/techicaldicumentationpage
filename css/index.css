@@ -1,0 +1,128 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    min-height: 100vh;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+
+
+}
+
+#navbar{
+    grid-area:nav;
+    border-right: 2px solid black;
+    background-color: rgb(203, 233, 233);
+}/*some basic style*/
+
+
+.main-section{
+    grid-area: m;
+    text-align: justify;/*this giving text == to be from both side*/
+    margin-right:5px;
+    margin-left:15px;
+   
+}
+
+.container{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: minmax(250px,auto)1fr;/*left side 400px n right side taking all space n 1 fr is how big it is*/
+/*grid-template-columns: repeat(2,1fr);
+grid-template-rows: 50px 100px;*/
+grid-template-areas: 
+'nav m'
+
+
+;
+}/*here making grid with template areaas how I wanna my page to look like, grid gap is just space between them*/
+
+textarea{
+    box-sizing: border-box;   
+     border:2px solid rgb(3, 1, 34);
+    background-color: rgb(3, 1, 34);
+    color:#ffffff;
+    font-size: 1,2em;
+    width:50%;
+    height:100px;
+    display: block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -o-border-radius:10px;
+  ;
+    margin-top: 2%;
+    margin-bottom:2%;   
+    
+    
+    /*making code everywhere to have own border */
+}
+
+.nav-link{
+    display: block;
+    text-decoration: none;
+    color:black;
+    border-bottom: 2px solid black;
+    font-size: larger;
+    padding:10px;
+   
+
+
+}
+.nav-link:hover{
+    background-color: rgb(171, 216, 233);
+    
+}
+.header{
+    font-size: 1.5em;
+    font-weight: bold;
+    
+    margin-bottom: 5%;
+    border-bottom: 2px solid black;
+    margin-top:2%;
+    /*this is class for header element of nav links in nav bar menu*/
+
+}
+header{
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+h3{
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+p{
+    margin-bottom:2%;
+}
+.list{
+    margin-left: 8%;
+    margin-bottom:2%;
+}
+@media screen and (max-width:750px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas:'nav' 
+        'm';
+    }
+    #navbar{
+        position: fixed;
+        top:0;
+        width:100%;
+    }
+    
+
+}
+@media screen and (max-width:400px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas:'nav' 
+        'm';
+    }
+
+}
+
+
