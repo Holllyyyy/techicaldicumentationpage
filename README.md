@@ -21,8 +21,8 @@ This project should have:
 - On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left half of the screen. 
 - Media query
 - Main element
-- The first element within each .main-section should be a <header> element which contains text that describes the topic of that section.
-- <p>,<li>,<code> elements
+- The first element within each .main-section should be a 'header' element which contains text that describes the topic of that section.
+- 'p','li','code' elements
 
 ### Screenshot
 
@@ -35,7 +35,7 @@ This project should have:
 
 ## My process
 
-I started with writing HTML where I added nav bar with links to sections. Than I made few sections,with a lot of text, with <p> element,<li>,<code>. When I wrote code in html  I put like this:
+I started with writing HTML where I added nav bar with links to sections. Than I made few sections,with a lot of text, with 'p' element,'li','code'. When I wrote code in html  I put like this:
 
 ```html
  <h3>An example of an attribute is:</h3>
